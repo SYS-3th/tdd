@@ -44,6 +44,8 @@ expect()안에 테스트할 변수나 값을 넣는다. 이후 toBe나 toEqual�
 결과 예측으로 가장 많이 쓰는 문법은 toBe와 toEqual이다.
 
 toBe는 단순 비교, toEqual은 배열이나 객체 내부까지 깊은 비교를 해준다.
+진철하게도 Jest는 toBe() 대신에 toEqual() 함수를 사용하라고 가이드해주고 있다.  
+실제로 테스트 코드를 작성할 때는 객체를 검증해야할 일이 많기 때문에 toEqual() 함수를 가장 많이 접할 수 있습니다.
 
 -  beforeEach, afterEach
 ```
