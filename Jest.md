@@ -27,13 +27,50 @@ jest —coverage
 ```
 test폴더 생성 후
 파일명.test.js생성
+--- 
 
-describe = 테스팅을 그룹화해서 내부에 세부적인 테스트코드들이있고
-describe 그룹끼리 또 테스팅을 연결해서 리액트 컴포넌트 연결하듯이 테스팅가능  
+- describe
+describe: 테스트 단위를 묶는 가장 큰 단위이다. 테스트 시 describe에 설명된 내용으로 테스트 단위를 크게 분류 해준다.
 
----   
+-  test, it
+test(), it()을 통해 기본 테스트를 한다.
 
-it('테스팅이름', () => {}) = 테스팅 소분화
+test와 it의 기능적 차이는 없지만 it의 경우 다른 테스트 프레임워크에서 많이 사용하기 때문에 넣었다고 한다.
+
+-  expect
+expect()안에 테스트할 변수나 값을 넣는다. 이후 toBe나 toEqual을 이용해 예측 값과 비교한다.
+
+-  toBe, toEqual
+결과 예측으로 가장 많이 쓰는 문법은 toBe와 toEqual이다.
+
+toBe는 단순 비교, toEqual은 배열이나 객체 내부까지 깊은 비교를 해준다.
+
+-  beforeEach, afterEach
+```
+let temp;
+describe("simple test", () => {
+  beforeEach(() => {
+    temp = 1;
+  });
+  
+  afterEach(() => {
+    temp = 0;
+  });
+  
+  test('tmep is 1', () => {
+    expect(temp).toBe(1); // true
+  });
+  
+  test('temp is 1', () => {
+    expect(temp).toBe(1); // true
+  });
+});
+```
+beforeEach는 test()가 실행할 때마다 실행해주는 전처리기이다.
+
+afterEach의 경우 test()가 종료될 때마다 실행하는 후처리기이다.
+
+따라서 위 예시에서 몇번의 테스트를 하더라도 temp는 1이 된다.
 
 ---   
 
