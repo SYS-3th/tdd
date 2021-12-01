@@ -72,4 +72,4 @@ test는 보통 동사이다.”테스트한다.”, “테스트해라.” 예�
  
  
  
- # [Jest](https://github.com/SYS-3th/tdd/blob/c064f289086c3742ab7ca49e777304239ba56950/Jest.md)
+ # [Jest.js](https://github.com/SYS-3th/tdd/blob/c064f289086c3742ab7ca49e777304239ba56950/Jest.md)
