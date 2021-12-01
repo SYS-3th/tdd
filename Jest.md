@@ -1,4 +1,7 @@
 # Jest
+![다운로드](https://user-images.githubusercontent.com/88940298/144252665-be14d4f5-597c-43b3-84ef-ed5b3df59f1c.png)
+
+
 
 환경설정 및 설치
 ```
