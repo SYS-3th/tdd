@@ -63,25 +63,6 @@ describe("Calculator", () => {
    it("init with 0", () => {
       expect(cal.value).toBe(0);
    });
-
-   it("sets", () => {
-      cal.set(9);
-      cal.clear();
-      expect(cal.value).toBe(0);
-   });
-
-   it("add", () => {
-      cal.set(1);
-      cal.add(2);
-      expect(cal.value).toBe(3);
-   });
-
-   it("substracts", () => {
-      cal.set(3);
-      cal.subtract(1);
-      expect(cal.value).toBe(2);
-   });
-
    it("multiply", () => {
       cal.set(3);
       cal.multiply(2);
