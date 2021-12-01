@@ -44,7 +44,7 @@ beforeAll(fn, timeout)
 beforeEach(fn, timeout)
 테스팅 실행을 처음,마지막,전부 등등 실행후 실행전 뭘할건지
 
---  
+---  
 ### 사용예시
 
 ```
